@@ -1,0 +1,114 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center_vertical"
+android:layout_margin="10dp"
+android:orientation="vertical"
+tools:context="com.example.scavengerhunt.MyGamesFragment">
+    <!--
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment"
+        android:name="com.example.scavengerhunt.MyGamesFragment"
+        tools:layout="@layout/fragment_my_games"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    -->
+<ViewAnimator
+    android:id="@+id/mainMenu_ProfilePanel"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/mainMenuImageView_userProfilePicture"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:id="@+id/mainMenuTextView_userName"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@id/mainMenuImageView_userProfilePicture"
+            android:layout_toRightOf="@+id/mainMenuImageView_userProfilePicture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Score: 12345"
+            android:id="@+id/mainMenuTextView_userTotalScore"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_alignTop="@id/mainMenuImageView_userProfilePicture"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_waiting_to_play"
+            android:id="@+id/mainMenuTextView_activeGames"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@id/mainMenuTextView_userName"
+            android:layout_toRightOf="@id/mainMenuImageView_userProfilePicture"
+            android:layout_toEndOf="@id/mainMenuImageView_userProfilePicture"
+            android:layout_alignBottom="@id/mainMenuImageView_userProfilePicture" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/mainMenuImageView_userProfilePicture"/>
+
+        <ListView
+            android:id="@+id/mainMenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainMenuImageView_userProfilePicture"/>
+ <!--
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mainMenuImageView_userProfilePicture">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+-->
+    </RelativeLayout>
+
+</ViewAnimator>
+
+
+
+
+</LinearLayout>

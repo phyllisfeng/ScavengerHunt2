@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">ScavengerHunt</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Title Page -->
+    <string name="welcome">Welcome to Scavenger Hunt</string>
+    <string name="welcome_message">Can you find them all?</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_new_user">Register</string>
+    <string name="label_cancel">Cancel</string>
+
+
+    <!--Login Page -->
+    <string name="title_activity_login">Login</string>
+    <string name="label_enterUsernamePassword">Enter your username and password</string>
+    <string name="hint_username">Enter username</string>
+    <string name="hint_password">Enter password</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_login_please_wait">Please wait...</string>
+    <string name="label_query_in_progress">Searching for user</string>
+    <string name="label_loginErrorMessage">Login error: </string>
+    <string name="label_loginPleaseTryAgainMessage">Please try again</string>
+
+
+    <!--Register Page-->
+    <string name="title_activity_register">New User Registration</string>
+    <string name="label_enterUsernamePasswordEmail">Enter your username, password and email</string>
+    <string name="hint_email">Enter your Email</string>
+    <string name="label_loginUsernameAlreadyExists">Already a user with that username. Please choose a new username</string>
+    <string name="label_signup_in_progress">Sign up in progress for new user</string>
+    <string name="label_signupErrorMessage">User signup error.</string>
+    <string name="label_register">Register</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+
+    <!--Main Menu Page -->
+    <string name="label_waiting_to_play">Here are the games waiting for you to play</string>
+    <string name="image">Thumbnail</string>
+
+    <!--Main Menu's Action Bar Menu -->
+    <string name="label_create_new_game">Create New Game</string>
+    <string name="label_message">Message</string>
+    <string name="label_camera">Camera</string>
+    <string name="label_log_out">Log Out</string>
+    <string name="title_activity_new_game">Create A New Game</string>
+    <string name="label_invite_user">Invite</string>
+
+    <!-- Create Game Page -->
+    <string name="hint_title">Enter Game Title</string>
+    <string name="hint_description">Enter Game Description</string>
+    <string name="hint_time_limit">Set Time Limit (HH:mm:ss)</string>
+    <string name="hint_set_item_amount">Set Item Amount</string>
+    <string name="label_newGame_please_wait">Please wait...</string>
+    <string name="label_newGame_in_progress"> creating </string>
+    <string name="label_newItemTable_create_failed">Failed to create new item table</string>
+    <string name="label_newPlayerTable_create_failed">Failed to create new player table</string>
+    <string name="label_newGame_create_failed">Failed to create new game</string>
+
+    <!--Camera -->
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+
+    <!--Game Menu-->
+    <string name="label_time_limit">Time Limit: </string>
+    <string name="label_time_left">Time Left: </string>
+    <string name="label_items_to_collect">Items to collect: </string>
+    <string name="label_my_score">My Score: </string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_game_menu">Game Menu</string>
+    <string name="title_activity_create_photo">Camera</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_Users">Users</string>
+</resources>

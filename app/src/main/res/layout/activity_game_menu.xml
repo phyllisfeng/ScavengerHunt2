@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMenuActivity">
+
+    <RelativeLayout
+        android:id="@+id/gameMenu_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+           android:id="@+id/gameMenu_gameTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="game title"
+           android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"  />
+
+        <TextView
+            android:id="@+id/gameMenu_gameDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:layout_below="@id/gameMenu_gameTitle"
+            android:layout_alignLeft="@id/gameMenu_gameTitle"
+            android:layout_alignStart="@id/gameMenu_gameTitle"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/gameMenuTextView_itemsToCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_items_to_collect"
+            android:layout_below="@id/gameMenu_gameDescription"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/gameMenu_itemsToCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="items to collect"
+            android:layout_below="@id/gameMenu_gameDescription"
+            android:layout_alignTop="@id/gameMenuTextView_itemsToCollect"
+            android:layout_toRightOf="@id/gameMenuTextView_itemsToCollect"
+            android:layout_toEndOf="@id/gameMenuTextView_itemsToCollect"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/gameMenuTextView_timeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time_limit"
+            android:layout_below="@id/gameMenu_itemsToCollect"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/gameMenu_timeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time limit"
+            android:layout_below="@id/gameMenu_itemsToCollect"
+            android:layout_alignTop="@id/gameMenuTextView_timeLimit"
+            android:layout_alignLeft="@id/gameMenu_itemsToCollect"
+            android:layout_alignStart="@id/gameMenu_itemsToCollect" />
+
+        <TextView
+            android:id="@+id/gameMenuTextView_timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time_left"
+            android:layout_below="@id/gameMenu_timeLimit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/gameMenu_timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time left"
+            android:layout_below="@id/gameMenu_timeLimit"
+            android:layout_alignTop="@id/gameMenuTextView_timeLeft"
+            android:layout_alignLeft="@id/gameMenu_timeLimit"
+            android:layout_alignStart="@id/gameMenu_timeLimit" />
+
+
+        <TextView
+            android:id="@+id/gameMenuTextView_myScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_my_score"
+            android:layout_below="@id/gameMenu_timeLeft"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/gameMenu_myScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my score"
+            android:layout_below="@id/gameMenu_timeLeft"
+            android:layout_alignTop="@id/gameMenuTextView_myScore"
+            android:layout_alignLeft="@id/gameMenu_timeLeft"
+            android:layout_alignStart="@id/gameMenu_timeLeft" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Player"
+        android:id="@+id/addPlayerButton"
+        android:layout_below="@+id/gameMenu_details"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

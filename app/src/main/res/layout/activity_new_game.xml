@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:layout_gravity="center_vertical"
+android:layout_margin="10dp"
+tools:context=".NewGameActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/label_create_new_game"
+    android:layout_margin="10dp"
+    android:textSize="14.0sp"
+    android:textStyle="bold"
+    android:visibility="visible" />
+
+<EditText
+    android:id="@+id/editText_NewGameTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_title"
+    android:inputType="text"
+    android:layout_gravity="center_horizontal"
+    android:singleLine="true"
+    android:visibility="visible"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" />
+
+<EditText
+    android:id="@+id/editText_NewGameDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_description"
+    android:inputType="textMultiLine"
+    android:layout_gravity="center_horizontal"
+    android:ems="10"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" />
+
+<EditText
+    android:id="@+id/editText_NewGameTimeLimit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_time_limit"
+    android:inputType="time"
+    android:singleLine="true"
+    android:ems="10"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" />
+
+<EditText
+    android:id="@+id/editText_NewGameItemAmount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_set_item_amount"
+    android:inputType="number"
+    android:ems="10"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" />
+
+<Button
+    android:id="@+id/button_CreateNewGame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/label_create_new_game"
+    android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
